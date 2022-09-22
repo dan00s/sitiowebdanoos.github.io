@@ -1,0 +1,146 @@
+.principal
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background-color: gray;
+}
+
+.principal img{
+  width: 60px;
+  height: 60px;
+  align-content: right;
+  }
+
+.menu
+{
+  width: 100%;
+  height: 10%;
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.menu a{
+  color: orangered;
+	text-decoration: inherit;
+	font-family: "Gill Sans", "DejaVu Sans Condensed", "sans-serif" ;
+	font-style: normal;
+	font-size: 16px; 
+}
+
+.seccion
+{
+  width: 100%;
+  height: 90%;
+  background-color: #F99E66 ;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.izquierdo
+{
+  width: 60%;
+  height: 100%;
+  background-color: midnightblue;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.izquierdo h1
+{
+  font-size: 40px;
+  margin-left: 20px;
+font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+  color: #fff;
+}
+.izquierdo h2
+{
+  font-size: 40px;
+  margin-left: 20px;
+font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+  color: #fff;
+}
+
+.izquierdo p
+{
+  font-size: 20px;
+font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+  margin-left: 20px;
+  color: #fff;
+}
+
+.derecho
+{
+  width: 60%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.derecho h1
+{
+	font-size: 20px;
+  margin-left: 20px;
+   font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+   color: #fff;
+}
+.derecho
+{
+  text-align: center;
+}
+
+.carrusel
+{ display: flex;
+	gap: 10px;
+	}
+.carrusel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carrusel-fotos {
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+}
+
+.carrusel-fotos img {
+  background: black;
+  border: 4px solid black;
+  width: 600px;
+  height: 575px;
+  object-fit: contain;
+}
+
+.carrusel-menu {
+  display: none;
+}
+
+@media screen and (min-width: 500px){
+  .carrusel-fotos {
+    overflow: hidden;
+  }
+  .carrusel-fotos img {
+    width: 500px;
+    height: 400px;
+  }
+  .carrusel-menu {
+    display: block;
+  }
+  .carrusel-menu img {
+  width: 50px;
+  height: 40px;
+  }
+}
